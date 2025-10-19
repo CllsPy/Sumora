@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 class WebsiteContentExtractor:
     def __init__(self, url: str):
         self.url = url
@@ -26,8 +27,4 @@ class WebsiteContentExtractor:
 
     def acess_and_extract(self):
         web_site_content = self.fetch_website_contents()
-        print(web_site_content)
-
-if __name__ == "__main__":
-    extractor = WebsiteContentExtractor("https://fr.wikipedia.org/wiki/Batman")
-    extractor.acess_and_extract()
+        return web_site_content
