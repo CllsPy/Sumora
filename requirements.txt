@@ -2,3 +2,4 @@ python-dotenv
 openai
 scraper
 streamlit
+beautifulsoup4
