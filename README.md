@@ -5,4 +5,4 @@ one, this will be something
 
 ## Doing
  - [ x ] Configuration
- - [ x ] create data_loader (unifciate sraper + data_loader)
+ - [  ] create data_loader (unifciate sraper + data_loader)
