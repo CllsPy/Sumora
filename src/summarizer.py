@@ -1,37 +1,23 @@
-import os
-from dotenv import load_dotenv
 from openai import OpenAI
-from src.data_loader import WebsiteContentExtractor
-from src.prompt_template import get_system_prompt, get_user_prompt_prefix
 from src.prompt_template import get_system_prompt, get_user_prompt_prefix
 
 
 class llmWhisper:
-    def __init__(self, api_key: str, model_name: str, url: str):
-        self.model_name = model_name
+    def __init__(self, api_key: str, model_name: str):
         self.api_key = api_key
-        self.openai = OpenAI(api_key=api_key)  
-        self.website = WebsiteContentExtractor(url).acess_and_extract()
+        self.model_name = model_name
+        self.openai = OpenAI()
 
-    def build_prompt(self):
+
+    def build_prompt(self, content: str):
         return [
-            {
-                "role": "system",
-                "content": get_system_prompt()  
-            },
-            {
-                "role": "user",
-                "content": get_user_prompt_prefix() + self.website  
-            }
+            {"role": "system", "content": get_system_prompt()},
+            {"role": "user", "content": get_user_prompt_prefix() + content}
         ]
 
-    def get_summary(self):
+    def get_summary(self, content: str):
         response = self.openai.chat.completions.create(
             model=self.model_name,
-            messages=self.build_prompt() 
+            messages=self.build_prompt(content) 
         )
-        print(response.choices[0].message.content)
-    
-if __name__ == "__main__":
-    whisper = llmWhisper(url="", model_name="", api_key="")
-    whisper.get_summary()
+        return (response.choices[0].message.content)

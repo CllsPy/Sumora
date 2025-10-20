@@ -16,7 +16,7 @@ Forneça um breve resumo deste site.
 Se incluir notícias ou anúncios, resuma-os também.
 
 web site:
-{url}
+
 """
 
     return template
