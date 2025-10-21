@@ -1,3 +1,3 @@
 # llmwhisper
 
-![C4](https://github.com/user-attachments/assets/24b3fbd9-9e14-403b-b84d-74147e3d87ac)
+![C4](https://github.com/user-attachments/assets/7aa9d0fe-8981-4e0e-88cd-b8f87285dc38)
