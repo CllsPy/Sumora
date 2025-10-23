@@ -6,41 +6,34 @@
 ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4B8BBE?logo=python&logoColor=white)
 ![C4 Model](https://img.shields.io/badge/C4%20Model-232F3E?logo=diagram&logoColor=white)
 
-## Understand How To Improve Your Personal Blog Trough A Funny Review
-A summarization system using a Large Language Model (LLM) automatically condenses long texts into concise summaries. It collects and preprocesses content, builds a prompt to guide the model, and uses the LLM’s contextual understanding to generate clear, focused summaries. This enables faster information consumption and supports tasks like news analysis, research synthesis, and business reporting.
+## Overview
+This project demonstrates how to enhance a personal blog through automated content summarization. It uses a Large Language Model (LLM) to generate concise and engaging summaries of blog articles. The system retrieves a blog URL, extracts text content, and produces a short, humorous summary that helps users quickly understand the main ideas.
 
 ## About This Project
 
 ### C4 Model
 ![c4lvl2](https://github.com/user-attachments/assets/11669801-7bd6-49b8-81ea-fe0f0e23cee7)
 
-We will build a summatization system using gpt-5-nano, trough [OpenAI Api](https://openai.com/fr-FR/index/openai-api/). The system will recieve the user's url blog, extract the content with [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc.ptbr/) and the generate a fuuny summary to the user. Finnaly, we deployed the sistem using [Streamlit Community Cloud](https://streamlit.io/cloud).
+This system uses the GPT-5-Nano model via the [OpenAI API](https://openai.com/fr-FR/index/openai-api/). The workflow receives a blog URL from the user, extracts content with [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc.ptbr/), and generates a lighthearted summary. Finally, the application is deployed using [Streamlit Community Cloud](https://streamlit.io/cloud).
 
 ## Development Roadmap
-Follow these steps to implement the system:
 
-1. Environment Setup - Prepare the project base
-2. Data Collection - Gather Blog Information
-3. Data Preprocessing - Clean Blog Data
-4. Sumarization Pipeline - Implement the following step
-  - extract data
-  - process data
-  - summarize content
-5. Cloud Deployment - Deploy on Streamlit Cloud Community
+1. **Environment Setup** – Initialize the project structure.  
+2. **Data Collection** – Fetch blog content using the provided URL.  
+3. **Data Preprocessing** – Clean and prepare the extracted text.  
+4. **Summarization Pipeline** –  
+   - Extract data  
+   - Process text  
+   - Generate summary  
+5. **Cloud Deployment** – Publish the app on Streamlit Community Cloud.
 
-Prerequisites
-Python | Version 3.11.9
-Streamlit Cloud Community Account - Free Tier
-OpenAI Api - Paid
+## Prerequisites
+- Python 3.11.9  
+- Streamlit Cloud Community account (Free Tier)  
+- OpenAI API key (Paid)
 
 ## Required Packages
-Install these Python packages before running the code:
+Install the dependencies before running the project:
 
-```python
-python-dotenv
-openai
-scraper
-streamlit
-beautifulsoup4
-```
-
+```bash
+pip install -e .
