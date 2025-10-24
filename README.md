@@ -1,5 +1,8 @@
 # Blog Summary System
 
+<img width="860" height="516" alt="image" src="https://github.com/user-attachments/assets/d7926522-8b3e-4c6b-a159-433196b75edd" />
+
+
 ## Tech Stack
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
